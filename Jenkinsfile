@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage("Docker build"){
             steps{
-            bat "docker -v"
+            sh "docker -v"
             echo "docker started"
         }}
     }
