@@ -8,13 +8,13 @@ pipeline {
         }}
         stage("Stop Docker"){
             steps{
-                sh "docker stop $(docker ps -a -q)"
+                sh 'docker stop \$(docker ps -a -q)'
                 echo "stop docker container"
             }
         }
         stage("Remove Docker Images"){
             steps{
-                sh "docker rm $(docker ps -a -q)"
+                sh "docker rm \$(docker ps -a -q)"
                 echo "rm docker images"
             }
         }
