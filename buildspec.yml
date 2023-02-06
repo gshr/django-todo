@@ -3,4 +3,6 @@ version : 0.1
 phases:
   install:
     commands:
-      echo "install"
+    - echo "install"
+    - ls
+    
