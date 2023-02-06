@@ -3,6 +3,7 @@ version : 0.1
 phases:
   install:
     commands:
-    - echo "install"
+    - echo "starting pipeline"
     - ls
-    
+    - docker build -t repo/latest .
+     
