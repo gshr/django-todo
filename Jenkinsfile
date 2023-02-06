@@ -5,7 +5,8 @@ pipeline {
             steps{
             sh "docker -v"
             echo "docker started"
-        }}
+        }
+        }
         stage("Stop All Running Docker COntainer ..."){
             steps{
                 sh 'docker stop \$(docker ps -a -q)'
